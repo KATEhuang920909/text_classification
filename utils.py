@@ -23,16 +23,16 @@ class InputHelper():
 		self.x_test=None
 		self.y_test=None
 	def load_file(self,):
-		with open('D:/learning/text_classification_self_learning/data/x_train.txt', encoding='utf-8') as f:
+		with open('data/x_train.txt', encoding='utf-8') as f:
 			x_train = f.readlines()
 			self.x_train = [k.strip() for k in x_train]  # .split('/t')
-		with open('D:/learning/text_classification_self_learning/data/y_train.txt', encoding='utf-8') as f:
+		with open('data/y_train.txt', encoding='utf-8') as f:
 			y_train = f.readlines()
 			self.y_train = [k.strip() for k in y_train]  # .split('/t')
-		with open('D:/learning/text_classification_self_learning/data/y_test.txt', encoding='utf-8') as f:
+		with open('data/y_test.txt', encoding='utf-8') as f:
 			y_test = f.readlines()
 			self.y_test = [k.strip() for k in y_test]  # .split('/t')
-		with open('D:/learning/text_classification_self_learning/data/x_test.txt', encoding='utf-8') as f:
+		with open('data/x_test.txt', encoding='utf-8') as f:
 			x_test = f.readlines()
 			self.x_test = [k.strip() for k in x_test]
 
